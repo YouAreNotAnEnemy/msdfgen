@@ -129,7 +129,7 @@ endif()
 
 # Extensions library
 if(NOT MSDFGEN_CORE_ONLY)
-    if(NOT TARGET Freetype::Freetype)
+    if(NOT TARGET freetype)
         find_package(Freetype REQUIRED)
     endif()
     if(NOT MSDFGEN_DISABLE_SVG AND NOT TARGET tinyxml2::tinyxml2)
